@@ -1,0 +1,108 @@
+ul, .roadli {
+    list-style: none;
+    padding: 0;
+}
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: start;
+    padding: 0 1rem;
+    padding: 3rem 0;
+}
+.wrapper {
+
+    width: 40vw;
+    background: rgb(231,92,50);
+    background: linear-gradient(0deg, rgba(231,92,50,1) 51%, rgba(222,150,53,1) 100%);
+    padding: 2rem;
+    border-radius: 15px;
+}
+#roadTitle {
+    font-size: 1.55rem;
+    font-family: sans-serif;
+    padding-left: 26%;
+}
+.sessions {
+    margin-top: 2rem;
+    border-radius: 12px;
+    position: relative;
+    padding-left: 26%;
+}
+.roadli {
+    padding-bottom: 1.5rem;
+    border-left: 1px solid #252525;
+    position: relative;
+    padding-left: 20px;
+    margin-left: 10px;
+}
+.roadli:last-child {
+    border: 0px;
+    padding-bottom: 0;
+}
+.roadli:before {
+    content: '';
+    width: 15px;
+    height: 15px;
+    background: white;
+    border: 1px solid #252525;
+    box-shadow: 3px 3px 0px #252525;
+    box-shadow: 3px 3px 0px #252525;
+    border-radius: 50%;
+    position: absolute;
+    left: -10px;
+    top: 0px;
+}
+.phase {
+    color: #2a2839;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+}
+@media screen and (min-width: 601px) {
+    .phase {
+        font-size: 0.9rem;
+   }
+}
+@media screen and (max-width: 600px) {
+    .phase {
+        margin-bottom: 0.3rem;
+        font-size: 0.85rem;
+   }
+   .wrapper {
+    width: 78vw;
+   }
+   #roadTitle {
+    padding-left: 0;
+}
+.sessions {
+    padding-left: 8%;
+}
+}
+p {
+    color: #4f4f4f;
+    font-family: sans-serif;
+    line-height: 1.5;
+    margin-top: 0.4rem;
+    font-size: 0.9rem;
+}
+p1 {
+    color: #4f4f4f;
+    font-family: sans-serif;
+    line-height: 1.5;
+    margin-top: 0.4rem;
+    font-size: 1.4rem;
+}
+@media only screen and (max-width: 1000px) {
+    .sessions{
+        align-items: center;
+        align-self: center;
+        align-content: center;
+    }
+    #roadTitle{
+        align-items: center;
+        align-self: center;
+        align-content: center;
+    }
+
+
+}
